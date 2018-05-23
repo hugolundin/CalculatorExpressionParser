@@ -14,6 +14,8 @@
 		F06E98C620ADFEF4008861A4 /* Character+value.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06E98C520ADFEF4008861A4 /* Character+value.swift */; };
 		F07C4E3E20B346BC0077923F /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07C4E3D20B346BC0077923F /* Interpreter.swift */; };
 		F081FEF420AD9AC000AB96BD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081FEF320AD9AC000AB96BD /* main.swift */; };
+		F09C4E6F20B4A1D600388A49 /* Expr+ast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C4E6E20B4A1D600388A49 /* Expr+ast.swift */; };
+		F0F135D620B548A60099BDC9 /* ASTPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F135D520B548A60099BDC9 /* ASTPass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,8 @@
 		F07C4E3D20B346BC0077923F /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
 		F081FEF020AD9AC000AB96BD /* Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calculator; sourceTree = BUILT_PRODUCTS_DIR; };
 		F081FEF320AD9AC000AB96BD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F09C4E6E20B4A1D600388A49 /* Expr+ast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expr+ast.swift"; sourceTree = "<group>"; };
+		F0F135D520B548A60099BDC9 /* ASTPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTPass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 				F06E98C320ADFED9008861A4 /* Character+isAlphanumeric.swift */,
 				F06E98BD20ADFCCE008861A4 /* Character+isSpace.swift */,
 				F06E98C520ADFEF4008861A4 /* Character+value.swift */,
+				F09C4E6E20B4A1D600388A49 /* Expr+ast.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -80,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F06E98BC20ADFCC1008861A4 /* Extensions */,
+				F0F135D520B548A60099BDC9 /* ASTPass.swift */,
 				F07C4E3D20B346BC0077923F /* Interpreter.swift */,
 				F06E98BA20ADFC71008861A4 /* Lexer.swift */,
 				F0368B8220B3125700CC29A3 /* Parser.swift */,
@@ -145,9 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F135D620B548A60099BDC9 /* ASTPass.swift in Sources */,
 				F081FEF420AD9AC000AB96BD /* main.swift in Sources */,
 				F06E98C620ADFEF4008861A4 /* Character+value.swift in Sources */,
 				F0368B8320B3125700CC29A3 /* Parser.swift in Sources */,
+				F09C4E6F20B4A1D600388A49 /* Expr+ast.swift in Sources */,
 				F06E98BB20ADFC71008861A4 /* Lexer.swift in Sources */,
 				F06E98C420ADFED9008861A4 /* Character+isAlphanumeric.swift in Sources */,
 				F06E98BE20ADFCCE008861A4 /* Character+isSpace.swift in Sources */,

@@ -8,12 +8,19 @@
 
 import Foundation
 
-let tokens = Lexer(input: "2 % 5").lex()
+let tokens = Lexer(input: "2 * 3 + 4").lex()
 
 do {
     let expr = try Parser(tokens: tokens).parse()
-    let result = try Interpreter(expr).interpret()
+    let transformed = expr.apply([PrecendencePass()])
+    let result = try Interpreter(transformed).interpret()
     print(result)
+} catch (let error) {
+    print(error)
+}
+
+do {
+    print(try Parser(tokens: tokens).parse().ast)
 } catch (let error) {
     print(error)
 }
